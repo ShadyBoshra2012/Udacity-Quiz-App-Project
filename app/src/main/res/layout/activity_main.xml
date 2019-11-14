@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_layout_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/app_title_padding"
+        android:text="@string/app_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/app_title_text_size"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/question_layout_odd_color"
+                android:orientation="vertical"
+                android:padding="@dimen/question_layout_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_title_1"
+                    android:textSize="@dimen/question_title_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/question_content_bottom_margin"
+                    android:text="@string/question_content_1"
+                    android:textColor="@color/question_content_color"
+                    android:textSize="@dimen/question_content_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/answer_layout_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/answer_layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_title"
+                        android:textSize="@dimen/question_title_text_size" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1">
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/question_1_check_box_swift"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_1_check_box_swift" />
+
+                            <CheckBox
+                                android:id="@+id/question_1_check_box_java"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_1_check_box_java" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/question_1_check_box_kotlin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_1_check_box_kotlin" />
+
+                            <CheckBox
+                                android:id="@+id/question_1_check_box_c_sharp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_1_check_box_c_sharp" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/question_layout_even_color"
+                android:orientation="vertical"
+                android:padding="@dimen/question_layout_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_title_2"
+                    android:textSize="@dimen/question_title_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/question_content_bottom_margin"
+                    android:text="@string/question_content_2"
+                    android:textColor="@color/question_content_color"
+                    android:textSize="@dimen/question_content_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/answer_layout_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/answer_layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_title"
+                        android:textSize="@dimen/question_title_text_size" />
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/question_2_radio_btn_int"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_2_radio_btn_int" />
+
+                        <RadioButton
+                            android:id="@+id/question_2_radio_btn_boolean"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_2_radio_btn_boolean" />
+
+                        <RadioButton
+                            android:id="@+id/question_2_radio_btn_double"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_2_radio_btn_double" />
+
+                        <RadioButton
+                            android:id="@+id/question_2_radio_btn_string"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/question_2_radio_btn_string" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/question_layout_odd_color"
+                android:orientation="vertical"
+                android:padding="@dimen/question_layout_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_title_3"
+                    android:textSize="@dimen/question_title_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/question_content_bottom_margin"
+                    android:text="@string/question_content_3"
+                    android:textColor="@color/question_content_color"
+                    android:textSize="@dimen/question_content_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/answer_layout_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/answer_layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_title"
+                        android:textSize="@dimen/question_title_text_size" />
+
+                    <EditText
+                        android:id="@+id/question_3_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/edit_Text_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/question_layout_even_color"
+                android:orientation="vertical"
+                android:padding="@dimen/question_layout_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_title_4"
+                    android:textSize="@dimen/question_title_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/question_content_bottom_margin"
+                    android:text="@string/question_content_4"
+                    android:textColor="@color/question_content_color"
+                    android:textSize="@dimen/question_content_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/answer_layout_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/answer_layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_title"
+                        android:textSize="@dimen/question_title_text_size" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="0,1">
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/question_4_check_box_chocolate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_4_check_box_chocolate" />
+
+                            <CheckBox
+                                android:id="@+id/question_4_check_box_kitkat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_4_check_box_kitkat" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/question_4_check_box_cupcake"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_4_check_box_cupcake" />
+
+                            <CheckBox
+                                android:id="@+id/question_4_check_box_lollipop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/question_4_check_box_lollipop" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/question_layout_odd_color"
+                android:orientation="vertical"
+                android:padding="@dimen/question_layout_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_title_5"
+                    android:textSize="@dimen/question_title_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/question_content_bottom_margin"
+                    android:text="@string/question_content_5"
+                    android:textColor="@color/question_content_color"
+                    android:textSize="@dimen/question_content_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/answer_layout_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/answer_layout_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer_title"
+                        android:textSize="@dimen/question_title_text_size" />
+
+                    <EditText
+                        android:id="@+id/question_5_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/edit_Text_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="numberSigned"
+                        android:maxLines="1"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/submit_btn_margin"
+                android:background="@color/colorAccent"
+                android:padding="@dimen/submit_btn_padding"
+                android:text="@string/submit_btn"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/submit_btn_text_size" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Udacity Quiz App Project</string>
+    <string name="app_title">Quiz App</string>
+    <string name="answer_title">Answer</string>
+    <string name="question_title_1">Question #1</string>
+    <string name="question_content_1">Which languages are used to develop native Android?</string>
+    <string name="question_1_check_box_swift">Swift</string>
+    <string name="question_1_check_box_java">Java</string>
+    <string name="question_1_check_box_kotlin">Kotlin</string>
+    <string name="question_1_check_box_c_sharp">C#</string>
+    <string name="question_title_2">Question #2</string>
+    <string name="question_content_2">What is the best primitive type to describe \"isOpen\" variable?</string>
+    <string name="question_2_radio_btn_int">Int</string>
+    <string name="question_2_radio_btn_boolean">Boolean</string>
+    <string name="question_2_radio_btn_double">Double</string>
+    <string name="question_2_radio_btn_string">String</string>
+    <string name="question_title_3">Question #3</string>
+    <string name="question_content_3">What is the variable type that holds text values?</string>
+    <string name="edit_Text_hint">Write your answer</string>
+    <string name="question_title_4">Question #4</string>
+    <string name="question_content_4">Which names is for Android versions?</string>
+    <string name="question_4_check_box_chocolate">Chocolate</string>
+    <string name="question_4_check_box_kitkat">Kitkat</string>
+    <string name="question_4_check_box_cupcake">Cupcake</string>
+    <string name="question_4_check_box_lollipop">Lollipop</string>
+    <string name="question_title_5">Questions #5</string>
+    <string name="question_content_5">What is the year of initial Android release date? (According to Wiki)</string>
+    <string name="submit_btn">Submit</string>
+</resources>

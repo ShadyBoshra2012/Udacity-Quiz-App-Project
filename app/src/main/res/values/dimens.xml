@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="question_layout_padding">8dp</dimen>
+    <dimen name="question_content_bottom_margin">8dp</dimen>
+
+    <dimen name="question_title_text_size">21sp</dimen>
+    <dimen name="question_content_text_size">24sp</dimen>
+    <dimen name="answer_layout_padding">8dp</dimen>
+    <dimen name="app_title_text_size">36sp</dimen>
+    <dimen name="app_title_padding">12dp</dimen>
+    <dimen name="submit_btn_margin">12dp</dimen>
+    <dimen name="submit_btn_text_size">28sp</dimen>
+    <dimen name="submit_btn_padding">8dp</dimen>
+</resources>
