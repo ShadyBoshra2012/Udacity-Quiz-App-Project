@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import es.dmoral.toasty.Toasty;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -29,10 +31,6 @@ public class MainActivity extends AppCompatActivity {
             CheckBox question1CheckBoxCSharp = findViewById(R.id.question_1_check_box_c_sharp);
             // Question 2
             RadioButton question2RadioBtnBoolean = findViewById(R.id.question_2_radio_btn_boolean);
-            /* Unused variables
-            RadioButton question2RadioBtnInt = findViewById(R.id.question_2_radio_btn_int);
-            RadioButton question2RadioBtnDouble = findViewById(R.id.question_2_radio_btn_double);
-            RadioButton question2RadioBtnString = findViewById(R.id.question_2_radio_btn_string);*/
             // Question 3
             EditText question3EditText = findViewById(R.id.question_3_edit_text);
             // Question 4
@@ -60,8 +58,11 @@ public class MainActivity extends AppCompatActivity {
             // Answer 5
             if (question5EditText.getText().toString().equals("2008"))
                 correctAnswers++;
-            // Show result in Toast
-            Toast.makeText(this, "Your result is " + correctAnswers + "/5.", Toast.LENGTH_LONG).show();
+            // Show result in Toast according to the number of correct Answers
+            if(correctAnswers >= 3)
+                Toasty.success(this, "Success! Your result is " + correctAnswers + "/5.", Toast.LENGTH_SHORT, true).show();
+            else
+                Toasty.warning(this, "Try again! Your result is " + correctAnswers + "/5.", Toast.LENGTH_SHORT, true).show();
         });
     }
 }
